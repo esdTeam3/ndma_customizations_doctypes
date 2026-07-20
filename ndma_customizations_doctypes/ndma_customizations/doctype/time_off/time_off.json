@@ -1,0 +1,171 @@
+{
+ "doctype": "DocType",
+ "name": "Time Off",
+ "module": "NDMA Customizations",
+ "custom": 1,
+ "is_submittable": 0,
+ "engine": "InnoDB",
+ "autoname": "naming_series:",
+ "naming_rule": "By \"Naming Series\" field",
+ "track_changes": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "allow_rename": 0,
+ "quick_entry": 1,
+ "field_order": [
+  "naming_series",
+  "employee",
+  "employee_name",
+  "department",
+  "column_break_1",
+  "date",
+  "duration_type",
+  "hours",
+  "section_break_1",
+  "reason",
+  "column_break_2",
+  "status",
+  "manager_approver",
+  "hr_approver",
+  "section_break_2",
+  "manager_remarks",
+  "hr_remarks"
+ ],
+ "fields": [
+  {
+   "fieldname": "naming_series",
+   "fieldtype": "Select",
+   "label": "Series",
+   "options": "HR-TOF-.YYYY.-",
+   "reqd": 1,
+   "print_hide": 1
+  },
+  {
+   "fieldname": "employee",
+   "fieldtype": "Link",
+   "label": "Employee",
+   "options": "Employee",
+   "reqd": 1,
+   "in_list_view": 1,
+   "in_standard_filter": 1
+  },
+  {
+   "fieldname": "employee_name",
+   "fieldtype": "Data",
+   "label": "Employee Name",
+   "fetch_from": "employee.employee_name",
+   "read_only": 1
+  },
+  {
+   "fieldname": "department",
+   "fieldtype": "Link",
+   "label": "Department",
+   "options": "Department",
+   "fetch_from": "employee.department",
+   "read_only": 1,
+   "in_standard_filter": 1
+  },
+  {
+   "fieldname": "column_break_1",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "date",
+   "fieldtype": "Date",
+   "label": "Date",
+   "reqd": 1,
+   "in_list_view": 1
+  },
+  {
+   "fieldname": "duration_type",
+   "fieldtype": "Select",
+   "label": "Duration",
+   "options": "Full Day\nHalf Day (AM)\nHalf Day (PM)\nHours",
+   "reqd": 1,
+   "in_list_view": 1
+  },
+  {
+   "fieldname": "hours",
+   "fieldtype": "Float",
+   "label": "Number of Hours",
+   "depends_on": "eval:doc.duration_type=='Hours'"
+  },
+  {
+   "fieldname": "section_break_1",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "reason",
+   "fieldtype": "Small Text",
+   "label": "Reason",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_2",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "label": "Status",
+   "options": "Draft\nPending Manager\nPending HR Approval\nApproved\nRejected",
+   "default": "Draft",
+   "read_only": 1,
+   "in_list_view": 1,
+   "in_standard_filter": 1
+  },
+  {
+   "fieldname": "manager_approver",
+   "fieldtype": "Link",
+   "label": "Manager Approver",
+   "options": "User",
+   "read_only": 1,
+   "description": "ASSUMPTION: auto-set from Employee > Reporting Manager. Confirm this is correct for Time Off specifically."
+  },
+  {
+   "fieldname": "hr_approver",
+   "fieldtype": "Link",
+   "label": "HR Approver",
+   "options": "User",
+   "read_only": 1
+  },
+  {
+   "fieldname": "section_break_2",
+   "fieldtype": "Section Break",
+   "label": "Approval Notes"
+  },
+  {
+   "fieldname": "manager_remarks",
+   "fieldtype": "Small Text",
+   "label": "Manager Remarks"
+  },
+  {
+   "fieldname": "hr_remarks",
+   "fieldtype": "Small Text",
+   "label": "HR Remarks"
+  }
+ ],
+ "permissions": [
+  {
+   "role": "Employee - NDMA",
+   "read": 1, "write": 1, "create": 1, "delete": 0,
+   "if_owner": 1, "submit": 0, "cancel": 0, "report": 1
+  },
+  {
+   "role": "Manager - NDMA",
+   "read": 1, "write": 1, "create": 0, "delete": 0, "report": 1
+  },
+  {
+   "role": "HR User",
+   "read": 1, "write": 1, "create": 1, "delete": 0, "report": 1
+  },
+  {
+   "role": "HR Manager",
+   "read": 1, "write": 1, "create": 1, "delete": 1, "report": 1
+  },
+  {
+   "role": "System Manager",
+   "read": 1, "write": 1, "create": 1, "delete": 1, "report": 1, "export": 1, "print": 1, "email": 1, "share": 1
+  }
+ ]
+}

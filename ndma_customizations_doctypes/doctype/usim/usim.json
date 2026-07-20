@@ -1,0 +1,153 @@
+{
+ "doctype": "DocType",
+ "name": "USIM",
+ "module": "NDMA Customizations",
+ "custom": 1,
+ "is_submittable": 0,
+ "engine": "InnoDB",
+ "autoname": "naming_series:",
+ "naming_rule": "By \"Naming Series\" field",
+ "track_changes": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "field_order": [
+  "naming_series",
+  "batch_number",
+  "quantity",
+  "purpose",
+  "requested_by",
+  "column_break_1",
+  "requested_on",
+  "processor",
+  "burn_verifier",
+  "section_break_1",
+  "status",
+  "usim_manager_approval",
+  "column_break_2",
+  "processing_notes",
+  "verification_notes"
+ ],
+ "fields": [
+  {
+   "fieldname": "naming_series",
+   "fieldtype": "Select",
+   "label": "Series",
+   "options": "USIM-.YYYY.-",
+   "reqd": 1,
+   "print_hide": 1
+  },
+  {
+   "fieldname": "batch_number",
+   "fieldtype": "Data",
+   "label": "Batch Number",
+   "reqd": 1,
+   "in_list_view": 1
+  },
+  {
+   "fieldname": "quantity",
+   "fieldtype": "Int",
+   "label": "Quantity",
+   "reqd": 1,
+   "in_list_view": 1
+  },
+  {
+   "fieldname": "purpose",
+   "fieldtype": "Small Text",
+   "label": "Purpose",
+   "reqd": 1
+  },
+  {
+   "fieldname": "requested_by",
+   "fieldtype": "Link",
+   "label": "Requested By",
+   "options": "User",
+   "default": "user",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_1",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "requested_on",
+   "fieldtype": "Date",
+   "label": "Requested On",
+   "default": "Today",
+   "read_only": 1
+  },
+  {
+   "fieldname": "processor",
+   "fieldtype": "Link",
+   "label": "Processor",
+   "options": "User",
+   "read_only": 1,
+   "description": "Expected to resolve to a user with the USIM Processor role."
+  },
+  {
+   "fieldname": "burn_verifier",
+   "fieldtype": "Link",
+   "label": "Burn Verifier",
+   "options": "User",
+   "read_only": 1,
+   "description": "Expected to resolve to a user with the USIM Burn Verifier role."
+  },
+  {
+   "fieldname": "section_break_1",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "label": "Status",
+   "options": "Draft\nPending Processing\nPending Verification\nIssued\nCompleted\nRejected",
+   "default": "Draft",
+   "read_only": 1,
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "description": "ASSUMPTION: Requester -> USIM Processor -> USIM Burn Verifier -> USIM Manager final approval -> Issued. Confirm whether USIM Manager sign-off is a distinct step or implicit in Burn Verifier."
+  },
+  {
+   "fieldname": "usim_manager_approval",
+   "fieldtype": "Link",
+   "label": "USIM Manager Approval By",
+   "options": "User",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_2",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "processing_notes",
+   "fieldtype": "Small Text",
+   "label": "Processing Notes"
+  },
+  {
+   "fieldname": "verification_notes",
+   "fieldtype": "Small Text",
+   "label": "Burn Verification Notes"
+  }
+ ],
+ "permissions": [
+  {
+   "role": "USIM Requester",
+    "read": 1, "write": 1, "create": 1, "submit": 1, "delete": 0, "if_owner": 1
+  },
+  {
+   "role": "USIM Processor",
+   "read": 1, "write": 1, "create": 0, "delete": 0, "report": 1
+  },
+  {
+   "role": "USIM Burn Verifier",
+   "read": 1, "write": 1, "create": 0, "delete": 0, "report": 1
+  },
+  {
+   "role": "USIM Manager",
+   "read": 1, "write": 1, "create": 1, "delete": 1, "report": 1
+  },
+  {
+   "role": "System Manager",
+   "read": 1, "write": 1, "create": 1, "delete": 1, "report": 1, "export": 1, "print": 1, "email": 1, "share": 1
+  }
+ ]
+}
