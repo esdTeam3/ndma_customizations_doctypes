@@ -1,0 +1,23 @@
+{
+ "content": null,
+ "creation": "2026-07-21 10:42:23.173991",
+ "docstatus": 0,
+ "doctype": "Page",
+ "idx": 0,
+ "modified": "2026-07-21 10:42:23.173991",
+ "modified_by": "Administrator",
+ "module": "NDMA Customizations",
+ "name": "procurement-finance-",
+ "owner": "Administrator",
+ "page_name": "procurement-finance-",
+ "roles": [
+  {
+   "role": "Administrator"
+  }
+ ],
+ "script": null,
+ "standard": "Yes",
+ "style": null,
+ "system_page": 0,
+ "title": "Procurement & Finance"
+}

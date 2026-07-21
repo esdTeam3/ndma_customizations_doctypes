@@ -4,7 +4,7 @@
  "docstatus": 0,
  "doctype": "Page",
  "idx": 0,
- "modified": "2026-07-10 14:43:34.611109",
+ "modified": "2026-07-21 10:43:03.984842",
  "modified_by": "Administrator",
  "module": "NDMA Customizations",
  "name": "approvals-cockpit",
@@ -14,5 +14,6 @@
  "script": null,
  "standard": "Yes",
  "style": null,
- "system_page": 0
+ "system_page": 0,
+ "title": "Approvals"
 }
