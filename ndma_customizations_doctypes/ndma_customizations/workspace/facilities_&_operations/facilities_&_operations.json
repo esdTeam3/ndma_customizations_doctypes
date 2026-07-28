@@ -1,0 +1,196 @@
+{
+ "charts": [],
+ "content": "[{\"id\":\"Q-eCPMDgVV\",\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h4\\\">Facilities &amp; Operations</span>\",\"col\":12}},{\"id\":\"UcRJZtxYSo\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Issues\",\"col\":3}},{\"id\":\"6YyLRddmkn\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Transportation Request\",\"col\":3}},{\"id\":\"NsOFTJvWAB\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Visitors on site\",\"col\":3}},{\"id\":\"q6ZinwUWoo\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"USIM queue\",\"col\":3}},{\"id\":\"Is8V6HH1BJ\",\"type\":\"paragraph\",\"data\":{\"text\":\"REPORTS &amp; MASTERS\",\"col\":12}},{\"id\":\"OKX-V4Hlzy\",\"type\":\"card\",\"data\":{\"card_name\":\"Facilities & admin\",\"col\":4}},{\"id\":\"Hi8c2-TecW\",\"type\":\"card\",\"data\":{\"card_name\":\"Transportation\",\"col\":4}},{\"id\":\"r84PAIX3vg\",\"type\":\"card\",\"data\":{\"card_name\":\"Front desk\",\"col\":4}},{\"id\":\"6p11SCULAG\",\"type\":\"card\",\"data\":{\"card_name\":\"USIM\",\"col\":4}}]",
+ "creation": "2026-07-22 08:37:15.080999",
+ "custom_blocks": [],
+ "docstatus": 0,
+ "doctype": "Workspace",
+ "for_user": "",
+ "hide_custom": 0,
+ "icon": "",
+ "idx": 0,
+ "indicator_color": "cyan",
+ "is_hidden": 0,
+ "label": "Facilities & Operations",
+ "links": [
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Front desk",
+   "link_count": 1,
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Card Break"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Visitor",
+   "link_count": 0,
+   "link_to": "Visitor",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "USIM",
+   "link_count": 1,
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Card Break"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "USIM",
+   "link_count": 0,
+   "link_to": "USIM",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Transportation",
+   "link_count": 2,
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Card Break"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Transportation Request",
+   "link_count": 0,
+   "link_to": "Transportation Request",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Vehicle Incident Report",
+   "link_count": 0,
+   "link_to": "Vehicle Incident Report",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Facilities & admin",
+   "link_count": 2,
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Card Break"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Issue",
+   "link_count": 0,
+   "link_to": "Issue",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Vehicle Incident Report",
+   "link_count": 0,
+   "link_to": "Vehicle Incident Report",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  }
+ ],
+ "modified": "2026-07-24 14:31:11.673984",
+ "modified_by": "Administrator",
+ "module": "NDMA Customizations",
+ "name": "Facilities & Operations",
+ "number_cards": [],
+ "owner": "Administrator",
+ "parent_page": "",
+ "public": 1,
+ "quick_lists": [],
+ "roles": [
+  {
+   "role": "Facilities Manager"
+  },
+  {
+   "role": "Facility User"
+  },
+  {
+   "role": "FASD Supervisor"
+  },
+  {
+   "role": "FASD Manager"
+  },
+  {
+   "role": "Transportation Request Admin"
+  },
+  {
+   "role": "Transportation request Approver"
+  },
+  {
+   "role": "Fleet Manager"
+  },
+  {
+   "role": "Receptionist"
+  },
+  {
+   "role": "USIM Requester"
+  },
+  {
+   "role": "USIM Processor"
+  },
+  {
+   "role": "USIM Burn Verifier"
+  },
+  {
+   "role": "USIM Manager"
+  }
+ ],
+ "sequence_id": 24.0,
+ "shortcuts": [
+  {
+   "color": "Grey",
+   "doc_view": "List",
+   "label": "Issues",
+   "link_to": "Issue",
+   "stats_filter": "[]",
+   "type": "DocType"
+  },
+  {
+   "color": "Grey",
+   "doc_view": "List",
+   "label": "Transportation Request",
+   "link_to": "Transportation Request",
+   "stats_filter": "[]",
+   "type": "DocType"
+  },
+  {
+   "color": "Grey",
+   "doc_view": "List",
+   "label": "Visitors on site",
+   "link_to": "Visitor",
+   "stats_filter": "[]",
+   "type": "DocType"
+  },
+  {
+   "color": "Grey",
+   "doc_view": "List",
+   "label": "USIM queue",
+   "link_to": "USIM",
+   "stats_filter": "[]",
+   "type": "DocType"
+  }
+ ],
+ "title": "Facilities & Operations"
+}

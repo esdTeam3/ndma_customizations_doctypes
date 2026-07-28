@@ -1,0 +1,77 @@
+{
+ "charts": [],
+ "content": "[{\"id\":\"K3gt4-KglC\",\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h4\\\">Procurement &amp; Finance</span>\",\"col\":12}},{\"id\":\"TVDOBkzXph\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Open Procurement & Finance\",\"col\":3}}]",
+ "creation": "2026-07-21 16:13:17.428187",
+ "custom_blocks": [],
+ "docstatus": 0,
+ "doctype": "Workspace",
+ "for_user": "",
+ "hide_custom": 0,
+ "icon": "",
+ "idx": 0,
+ "indicator_color": "green",
+ "is_hidden": 0,
+ "label": "Procurement & Finance",
+ "links": [],
+ "modified": "2026-07-24 14:31:11.565903",
+ "modified_by": "Administrator",
+ "module": "NDMA Customizations",
+ "name": "Procurement & Finance",
+ "number_cards": [],
+ "owner": "Administrator",
+ "parent_page": "",
+ "public": 1,
+ "quick_lists": [],
+ "roles": [
+  {
+   "role": "Procurement Manager - NDMA"
+  },
+  {
+   "role": "Procurement Officer"
+  },
+  {
+   "role": "Procurement Assistant"
+  },
+  {
+   "role": "Professional Assistant - NDMA"
+  },
+  {
+   "role": "PR Verifier"
+  },
+  {
+   "role": "Purchase User"
+  },
+  {
+   "role": "Purchase Manager"
+  },
+  {
+   "role": "Purchase Master Manager"
+  },
+  {
+   "role": "Stock Manager"
+  },
+  {
+   "role": "Stock User"
+  },
+  {
+   "role": "Accounts Manager"
+  },
+  {
+   "role": "Accounts User"
+  },
+  {
+   "role": "Examination Officer - NDMA"
+  }
+ ],
+ "sequence_id": 23.0,
+ "shortcuts": [
+  {
+   "color": "Grey",
+   "doc_view": "List",
+   "label": "Open Procurement & Finance",
+   "type": "URL",
+   "url": "/app/procurement-finance-cockpit"
+  }
+ ],
+ "title": "Procurement & Finance"
+}
