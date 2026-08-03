@@ -1,19 +1,24 @@
 {
  "charts": [],
- "content": "[{\"id\":\"K3gt4-KglC\",\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h4\\\">Procurement &amp; Finance</span>\",\"col\":12}},{\"id\":\"TVDOBkzXph\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Open Procurement & Finance\",\"col\":3}}]",
+ "content": "[{\"id\":\"phdr\",\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h1\\\">Procurement &amp; Finance</span>\",\"col\":12}},{\"id\":\"pfcockpit01\",\"type\":\"custom_block\",\"data\":{\"custom_block_name\":\"Procurement & Finance - Cockpit\",\"col\":12}}]",
  "creation": "2026-07-21 16:13:17.428187",
- "custom_blocks": [],
+ "custom_blocks": [
+  {
+   "custom_block_name": "Procurement & Finance - Cockpit",
+   "label": "Procurement & Finance - Cockpit"
+  }
+ ],
  "docstatus": 0,
  "doctype": "Workspace",
  "for_user": "",
  "hide_custom": 0,
- "icon": "",
+ "icon": "buying",
  "idx": 0,
  "indicator_color": "green",
  "is_hidden": 0,
  "label": "Procurement & Finance",
  "links": [],
- "modified": "2026-07-24 14:31:11.565903",
+ "modified": "2026-08-03 09:09:37.120323",
  "modified_by": "Administrator",
  "module": "NDMA Customizations",
  "name": "Procurement & Finance",
@@ -63,7 +68,7 @@
    "role": "Examination Officer - NDMA"
   }
  ],
- "sequence_id": 23.0,
+ "sequence_id": 6.0,
  "shortcuts": [
   {
    "color": "Grey",
