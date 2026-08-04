@@ -63,7 +63,18 @@ doctype_js = {
 # Fixtures
 # ------------------
 
-fixtures = ["Workspace"]
+fixtures = [
+	{
+		"doctype": "Workspace",
+		"filters": [["name", "in", ["Procurement & Finance", "Facilities & Operations"]]],
+	},
+	{
+		"doctype": "Custom HTML Block",
+		"filters": [
+			["name", "in", ["Procurement & Finance - Cockpit", "Facilities & Operations - Custom Styles"]]
+		],
+	},
+]
 
 # Svg Icons
 # ------------------
