@@ -51,15 +51,6 @@ doctype_js = {
 # doctype_tree_js = {"doctype" : "public/js/doctype_tree.js"}
 # doctype_calendar_js = {"doctype" : "public/js/doctype_calendar.js"}
 
-# include js in doctype views
-doctype_js = {
-	"Time Off": "public/js/time_off.js",
-	"Contract Renewal": "public/js/contract_renewal.js",
-}
-# doctype_list_js = {"doctype" : "public/js/doctype_list.js"}
-# doctype_tree_js = {"doctype" : "public/js/doctype_tree.js"}
-# doctype_calendar_js = {"doctype" : "public/js/doctype_calendar.js"}
-
 # Fixtures
 # ------------------
 
@@ -75,12 +66,6 @@ fixtures = [
 		],
 	},
 ]
-
-# Svg Icons
-# ------------------
-# include app icons in desk
-# app_include_icons = "ndma_customizations_doctypes/public/icons.svg"
-
 
 # Svg Icons
 # ------------------
