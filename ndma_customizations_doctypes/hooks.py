@@ -123,10 +123,10 @@ doctype_js = {
 # permission_query_conditions = {
 # 	"Event": "frappe.desk.doctype.event.event.get_permission_query_conditions",
 # }
-#
-# has_permission = {
-# 	"Event": "frappe.desk.doctype.event.event.has_permission",
-# }
+
+has_permission = {
+	"Workspace": "ndma_customizations_doctypes.permissions.restrict_tax_and_benefits_workspace",
+}
 
 # DocType Class
 # ---------------
