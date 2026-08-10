@@ -1,0 +1,490 @@
+[
+ {
+  "charts": [],
+  "content": "[{\"id\":\"phdr\",\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h1\\\">Procurement &amp; Finance</span>\",\"col\":12}},{\"id\":\"pfcockpit01\",\"type\":\"custom_block\",\"data\":{\"custom_block_name\":\"Procurement & Finance - Cockpit\",\"col\":12}}]",
+  "custom_blocks": [
+   {
+    "custom_block_name": "Procurement & Finance - Cockpit",
+    "label": "Procurement & Finance - Cockpit",
+    "parent": "Procurement & Finance",
+    "parentfield": "custom_blocks",
+    "parenttype": "Workspace"
+   }
+  ],
+  "docstatus": 0,
+  "doctype": "Workspace",
+  "for_user": "",
+  "hide_custom": 0,
+  "icon": "buying",
+  "indicator_color": "green",
+  "is_hidden": 0,
+  "label": "Procurement & Finance",
+  "links": [],
+  "modified": "2026-08-03 09:09:37.120323",
+  "module": "NDMA Customizations",
+  "name": "Procurement & Finance",
+  "number_cards": [],
+  "parent_page": "",
+  "public": 1,
+  "quick_lists": [],
+  "restrict_to_domain": null,
+  "roles": [
+   {
+    "parent": "Procurement & Finance",
+    "parentfield": "roles",
+    "parenttype": "Workspace",
+    "role": "Procurement Manager - NDMA"
+   },
+   {
+    "parent": "Procurement & Finance",
+    "parentfield": "roles",
+    "parenttype": "Workspace",
+    "role": "Procurement Officer"
+   },
+   {
+    "parent": "Procurement & Finance",
+    "parentfield": "roles",
+    "parenttype": "Workspace",
+    "role": "Procurement Assistant"
+   },
+   {
+    "parent": "Procurement & Finance",
+    "parentfield": "roles",
+    "parenttype": "Workspace",
+    "role": "Professional Assistant - NDMA"
+   },
+   {
+    "parent": "Procurement & Finance",
+    "parentfield": "roles",
+    "parenttype": "Workspace",
+    "role": "PR Verifier"
+   },
+   {
+    "parent": "Procurement & Finance",
+    "parentfield": "roles",
+    "parenttype": "Workspace",
+    "role": "Purchase User"
+   },
+   {
+    "parent": "Procurement & Finance",
+    "parentfield": "roles",
+    "parenttype": "Workspace",
+    "role": "Purchase Manager"
+   },
+   {
+    "parent": "Procurement & Finance",
+    "parentfield": "roles",
+    "parenttype": "Workspace",
+    "role": "Purchase Master Manager"
+   },
+   {
+    "parent": "Procurement & Finance",
+    "parentfield": "roles",
+    "parenttype": "Workspace",
+    "role": "Stock Manager"
+   },
+   {
+    "parent": "Procurement & Finance",
+    "parentfield": "roles",
+    "parenttype": "Workspace",
+    "role": "Stock User"
+   },
+   {
+    "parent": "Procurement & Finance",
+    "parentfield": "roles",
+    "parenttype": "Workspace",
+    "role": "Accounts Manager"
+   },
+   {
+    "parent": "Procurement & Finance",
+    "parentfield": "roles",
+    "parenttype": "Workspace",
+    "role": "Accounts User"
+   },
+   {
+    "parent": "Procurement & Finance",
+    "parentfield": "roles",
+    "parenttype": "Workspace",
+    "role": "Examination Officer - NDMA"
+   }
+  ],
+  "sequence_id": 6.0,
+  "shortcuts": [
+   {
+    "color": "Grey",
+    "doc_view": "List",
+    "format": null,
+    "icon": null,
+    "kanban_board": null,
+    "label": "Open Procurement & Finance",
+    "link_to": null,
+    "parent": "Procurement & Finance",
+    "parentfield": "shortcuts",
+    "parenttype": "Workspace",
+    "report_ref_doctype": null,
+    "restrict_to_domain": null,
+    "stats_filter": null,
+    "type": "URL",
+    "url": "/app/procurement-finance-cockpit"
+   }
+  ],
+  "title": "Procurement & Finance"
+ },
+ {
+  "charts": [],
+  "content": "[{\"id\":\"Q-eCPMDgVV\",\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h1\\\">Facilities &amp; Operations</span>\",\"col\":12}},{\"id\":\"foDash001\",\"type\":\"custom_block\",\"data\":{\"custom_block_name\":\"Facilities & Operations - Custom Styles\",\"col\":12}}]",
+  "custom_blocks": [
+   {
+    "custom_block_name": "Facilities & Operations - Custom Styles",
+    "label": "Facilities & Operations - Custom Styles",
+    "parent": "Facilities & Operations",
+    "parentfield": "custom_blocks",
+    "parenttype": "Workspace"
+   }
+  ],
+  "docstatus": 0,
+  "doctype": "Workspace",
+  "for_user": "",
+  "hide_custom": 0,
+  "icon": "organization",
+  "indicator_color": "cyan",
+  "is_hidden": 0,
+  "label": "Facilities & Operations",
+  "links": [
+   {
+    "dependencies": null,
+    "description": "For role: Receptionist",
+    "hidden": 0,
+    "icon": null,
+    "is_query_report": 0,
+    "label": "Front desk",
+    "link_count": 1,
+    "link_to": null,
+    "link_type": "DocType",
+    "onboard": 0,
+    "only_for": null,
+    "parent": "Facilities & Operations",
+    "parentfield": "links",
+    "parenttype": "Workspace",
+    "report_ref_doctype": null,
+    "type": "Card Break"
+   },
+   {
+    "dependencies": null,
+    "description": null,
+    "hidden": 0,
+    "icon": null,
+    "is_query_report": 0,
+    "label": "Visitor",
+    "link_count": 0,
+    "link_to": "Visitor",
+    "link_type": "DocType",
+    "onboard": 0,
+    "only_for": null,
+    "parent": "Facilities & Operations",
+    "parentfield": "links",
+    "parenttype": "Workspace",
+    "report_ref_doctype": null,
+    "type": "Link"
+   },
+   {
+    "dependencies": null,
+    "description": "For role: USIM Manager / Processor / Burn Verifier",
+    "hidden": 0,
+    "icon": null,
+    "is_query_report": 0,
+    "label": "USIM",
+    "link_count": 1,
+    "link_to": null,
+    "link_type": "DocType",
+    "onboard": 0,
+    "only_for": null,
+    "parent": "Facilities & Operations",
+    "parentfield": "links",
+    "parenttype": "Workspace",
+    "report_ref_doctype": null,
+    "type": "Card Break"
+   },
+   {
+    "dependencies": null,
+    "description": null,
+    "hidden": 0,
+    "icon": null,
+    "is_query_report": 0,
+    "label": "USIM",
+    "link_count": 0,
+    "link_to": "USIM",
+    "link_type": "DocType",
+    "onboard": 0,
+    "only_for": null,
+    "parent": "Facilities & Operations",
+    "parentfield": "links",
+    "parenttype": "Workspace",
+    "report_ref_doctype": null,
+    "type": "Link"
+   },
+   {
+    "dependencies": null,
+    "description": "For role: Transport Request Admin / Approver / Fleet Manager",
+    "hidden": 0,
+    "icon": null,
+    "is_query_report": 0,
+    "label": "Transportation",
+    "link_count": 2,
+    "link_to": null,
+    "link_type": "DocType",
+    "onboard": 0,
+    "only_for": null,
+    "parent": "Facilities & Operations",
+    "parentfield": "links",
+    "parenttype": "Workspace",
+    "report_ref_doctype": null,
+    "type": "Card Break"
+   },
+   {
+    "dependencies": null,
+    "description": null,
+    "hidden": 0,
+    "icon": null,
+    "is_query_report": 0,
+    "label": "Transportation Request",
+    "link_count": 0,
+    "link_to": "Transportation Request",
+    "link_type": "DocType",
+    "onboard": 0,
+    "only_for": null,
+    "parent": "Facilities & Operations",
+    "parentfield": "links",
+    "parenttype": "Workspace",
+    "report_ref_doctype": null,
+    "type": "Link"
+   },
+   {
+    "dependencies": null,
+    "description": null,
+    "hidden": 0,
+    "icon": null,
+    "is_query_report": 0,
+    "label": "Vehicle Incident Report",
+    "link_count": 0,
+    "link_to": "Vehicle Incident Report",
+    "link_type": "DocType",
+    "onboard": 0,
+    "only_for": null,
+    "parent": "Facilities & Operations",
+    "parentfield": "links",
+    "parenttype": "Workspace",
+    "report_ref_doctype": null,
+    "type": "Link"
+   },
+   {
+    "dependencies": null,
+    "description": "For role: Facilities Manager / FASD Supervisor",
+    "hidden": 0,
+    "icon": null,
+    "is_query_report": 0,
+    "label": "Facilities & admin",
+    "link_count": 2,
+    "link_to": null,
+    "link_type": "DocType",
+    "onboard": 0,
+    "only_for": null,
+    "parent": "Facilities & Operations",
+    "parentfield": "links",
+    "parenttype": "Workspace",
+    "report_ref_doctype": null,
+    "type": "Card Break"
+   },
+   {
+    "dependencies": null,
+    "description": null,
+    "hidden": 0,
+    "icon": null,
+    "is_query_report": 0,
+    "label": "Issue",
+    "link_count": 0,
+    "link_to": "Issue",
+    "link_type": "DocType",
+    "onboard": 0,
+    "only_for": null,
+    "parent": "Facilities & Operations",
+    "parentfield": "links",
+    "parenttype": "Workspace",
+    "report_ref_doctype": null,
+    "type": "Link"
+   },
+   {
+    "dependencies": null,
+    "description": null,
+    "hidden": 0,
+    "icon": null,
+    "is_query_report": 0,
+    "label": "Vehicle Incident Report",
+    "link_count": 0,
+    "link_to": "Vehicle Incident Report",
+    "link_type": "DocType",
+    "onboard": 0,
+    "only_for": null,
+    "parent": "Facilities & Operations",
+    "parentfield": "links",
+    "parenttype": "Workspace",
+    "report_ref_doctype": null,
+    "type": "Link"
+   }
+  ],
+  "modified": "2026-08-03 09:09:36.963151",
+  "module": "NDMA Customizations",
+  "name": "Facilities & Operations",
+  "number_cards": [],
+  "parent_page": "",
+  "public": 1,
+  "quick_lists": [],
+  "restrict_to_domain": null,
+  "roles": [
+   {
+    "parent": "Facilities & Operations",
+    "parentfield": "roles",
+    "parenttype": "Workspace",
+    "role": "Facilities Manager"
+   },
+   {
+    "parent": "Facilities & Operations",
+    "parentfield": "roles",
+    "parenttype": "Workspace",
+    "role": "Facility User"
+   },
+   {
+    "parent": "Facilities & Operations",
+    "parentfield": "roles",
+    "parenttype": "Workspace",
+    "role": "FASD Supervisor"
+   },
+   {
+    "parent": "Facilities & Operations",
+    "parentfield": "roles",
+    "parenttype": "Workspace",
+    "role": "FASD Manager"
+   },
+   {
+    "parent": "Facilities & Operations",
+    "parentfield": "roles",
+    "parenttype": "Workspace",
+    "role": "Transportation Request Admin"
+   },
+   {
+    "parent": "Facilities & Operations",
+    "parentfield": "roles",
+    "parenttype": "Workspace",
+    "role": "Transportation request Approver"
+   },
+   {
+    "parent": "Facilities & Operations",
+    "parentfield": "roles",
+    "parenttype": "Workspace",
+    "role": "Fleet Manager"
+   },
+   {
+    "parent": "Facilities & Operations",
+    "parentfield": "roles",
+    "parenttype": "Workspace",
+    "role": "Receptionist"
+   },
+   {
+    "parent": "Facilities & Operations",
+    "parentfield": "roles",
+    "parenttype": "Workspace",
+    "role": "USIM Requester"
+   },
+   {
+    "parent": "Facilities & Operations",
+    "parentfield": "roles",
+    "parenttype": "Workspace",
+    "role": "USIM Processor"
+   },
+   {
+    "parent": "Facilities & Operations",
+    "parentfield": "roles",
+    "parenttype": "Workspace",
+    "role": "USIM Burn Verifier"
+   },
+   {
+    "parent": "Facilities & Operations",
+    "parentfield": "roles",
+    "parenttype": "Workspace",
+    "role": "USIM Manager"
+   }
+  ],
+  "sequence_id": 5.0,
+  "shortcuts": [
+   {
+    "color": "Red",
+    "doc_view": "List",
+    "format": null,
+    "icon": null,
+    "kanban_board": null,
+    "label": "Issues",
+    "link_to": "Issue",
+    "parent": "Facilities & Operations",
+    "parentfield": "shortcuts",
+    "parenttype": "Workspace",
+    "report_ref_doctype": null,
+    "restrict_to_domain": null,
+    "stats_filter": "[]",
+    "type": "DocType",
+    "url": null
+   },
+   {
+    "color": "Orange",
+    "doc_view": "List",
+    "format": null,
+    "icon": null,
+    "kanban_board": null,
+    "label": "Transportation Request",
+    "link_to": "Transportation Request",
+    "parent": "Facilities & Operations",
+    "parentfield": "shortcuts",
+    "parenttype": "Workspace",
+    "report_ref_doctype": null,
+    "restrict_to_domain": null,
+    "stats_filter": "[]",
+    "type": "DocType",
+    "url": null
+   },
+   {
+    "color": "Green",
+    "doc_view": "List",
+    "format": null,
+    "icon": null,
+    "kanban_board": null,
+    "label": "Visitors on site",
+    "link_to": "Visitor",
+    "parent": "Facilities & Operations",
+    "parentfield": "shortcuts",
+    "parenttype": "Workspace",
+    "report_ref_doctype": null,
+    "restrict_to_domain": null,
+    "stats_filter": "[]",
+    "type": "DocType",
+    "url": null
+   },
+   {
+    "color": "Orange",
+    "doc_view": "List",
+    "format": null,
+    "icon": null,
+    "kanban_board": null,
+    "label": "USIM queue",
+    "link_to": "USIM",
+    "parent": "Facilities & Operations",
+    "parentfield": "shortcuts",
+    "parenttype": "Workspace",
+    "report_ref_doctype": null,
+    "restrict_to_domain": null,
+    "stats_filter": "[]",
+    "type": "DocType",
+    "url": null
+   }
+  ],
+  "title": "Facilities & Operations"
+ }
+]
