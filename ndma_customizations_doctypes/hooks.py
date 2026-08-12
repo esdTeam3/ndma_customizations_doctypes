@@ -136,12 +136,19 @@ fixtures = [
 # -----------
 # Permissions evaluated in scripted ways
 
-# permission_query_conditions = {
-# 	"Event": "frappe.desk.doctype.event.event.get_permission_query_conditions",
-# }
+permission_query_conditions = {
+	"Leave Application": "ndma_customizations_doctypes.permissions.get_permission_query_conditions",
+	"Leave Resumption": "ndma_customizations_doctypes.permissions.get_permission_query_conditions",
+	"Employee Time Off Request": "ndma_customizations_doctypes.permissions.get_permission_query_conditions",
+	"Transportation Request": "ndma_customizations_doctypes.permissions.get_permission_query_conditions",
+}
 
 has_permission = {
 	"Workspace": "ndma_customizations_doctypes.permissions.restrict_tax_and_benefits_workspace",
+	"Leave Application": "ndma_customizations_doctypes.permissions.department_manager_has_permission",
+	"Leave Resumption": "ndma_customizations_doctypes.permissions.department_manager_has_permission",
+	"Employee Time Off Request": "ndma_customizations_doctypes.permissions.department_manager_has_permission",
+	"Transportation Request": "ndma_customizations_doctypes.permissions.department_manager_has_permission",
 }
 
 # DocType Class
