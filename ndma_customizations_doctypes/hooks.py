@@ -65,6 +65,26 @@ fixtures = [
 			["name", "in", ["Procurement & Finance - Cockpit", "Facilities & Operations - Custom Styles"]]
 		],
 	},
+	{
+		"doctype": "Role",
+		"filters": [["role_name", "=", "Department Manager"]],
+	},
+	{
+		"doctype": "Custom DocPerm",
+		"filters": [
+			["role", "=", "Department Manager"],
+			[
+				"parent",
+				"in",
+				[
+					"Leave Application",
+					"Leave Resumption",
+					"Employee Time Off Request",
+					"Transportation Request",
+				],
+			],
+		],
+	},
 ]
 
 # Svg Icons
