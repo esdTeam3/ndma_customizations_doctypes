@@ -31,10 +31,18 @@ def restrict_tax_and_benefits_workspace(doc, ptype, user, debug=False):
 # additionally narrow them if a user happens to hold both roles.
 DEPARTMENT_MANAGER_ROLE = "Department Manager"
 
+# DGM (Admin) - NDMA and DGM (Operations) - NDMA are org-wide Leave Application
+# approvers (see the Leave Application Workflow's "Pending DGM Approval" /
+# "Submitted" transitions) and are meant to see every department's records
+# across the Manager - NDMA workspace, not just their own - exempt everywhere,
+# same as System Manager, in case either role is ever also assigned Department
+# Manager.
+_DGM_ROLES = {"DGM (Admin) - NDMA", "DGM (Operations) - NDMA"}
+
 DEPARTMENT_SCOPED_DOCTYPES = {
 	"Leave Application": {
 		"field": "department",
-		"exempt_roles": {"System Manager", "HR Manager", "HR User"},
+		"exempt_roles": {"System Manager", "HR Manager", "HR User"} | _DGM_ROLES,
 	},
 	"Leave Resumption": {
 		"field": "department",
@@ -45,15 +53,16 @@ DEPARTMENT_SCOPED_DOCTYPES = {
 			"Leave Approver",
 			"Manager - NDMA",
 			"Professional Assistant - NDMA",
-		},
+		}
+		| _DGM_ROLES,
 	},
 	"Employee Time Off Request": {
 		"field": "department",
-		"exempt_roles": {"System Manager"},
+		"exempt_roles": {"System Manager"} | _DGM_ROLES,
 	},
 	"Transportation Request": {
 		"field": "department_tr",
-		"exempt_roles": {"System Manager"},
+		"exempt_roles": {"System Manager"} | _DGM_ROLES,
 	},
 }
 
