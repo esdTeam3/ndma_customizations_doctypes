@@ -73,6 +73,23 @@ fixtures = [
 		"filters": [["role_name", "=", "Department Manager"]],
 	},
 	{
+		"doctype": "Number Card",
+		"filters": [
+			[
+				"name",
+				"in",
+				[
+					"Leave Application – Submitted",  # noqa: RUF001
+					"Leave Adjustment – Manager Approval",  # noqa: RUF001
+					"Time Off Request – Manager Approval",  # noqa: RUF001
+					"Time Off Request – Return Endorsement",  # noqa: RUF001
+					"Leave Resumption – Submitted",  # noqa: RUF001
+					"Transportation Request – Manager Approval",  # noqa: RUF001
+				],
+			]
+		],
+	},
+	{
 		"doctype": "Custom DocPerm",
 		"filters": [
 			[
